@@ -49,3 +49,12 @@ let div1 = divisao(10,5)
 console.log(div1)
 let div2 = divisao(0.2)
 console.çog(div2)
+
+let parOuImpar = numeroParOuImpar(2)
+console.log(parOuImpar)
+
+let intervalo = intervaloNumero(1,4)
+console.log(intervalo)
+
+let resultFatorial = fatorial(3);
+console.log(resultFatorial)
