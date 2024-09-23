@@ -18,9 +18,29 @@ function div(num1,num2){
 function mult(num1,num2){
     return num1 * num2;
 }
-calc.addEventListener("click"),()=>{
+calc.addEventListener("click",()=>{
 
     const valor1 = parseFloat(num1.value);
-    
-}
+    const valor2 = parseFloat(num2.value);
+    const operacao = opc.value;
+    let result = 0;
+
+    if(operacao === "som"){
+        result = somar(valor1, valor2);
+    }
+    else if (operacao === "sub"){
+        result = sub(valor1, valor2);
+    }
+    else if (operacao === "mult"){
+        result = mult(valor1, valor2);
+    }
+    else if (operacao === "div"){
+        result = div(valor1, valor2);
+    }
+
+    const resultado = document.getElementById("result");
+
+    resultado.textContent = result;
+
+})
 
